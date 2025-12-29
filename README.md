@@ -333,7 +333,9 @@ El objetivo es consultar datos de contactos desde un servicio externo y sincroni
 - Recuerda el módulo realizado sobre callouts de tipo REST.
 - Para consultar un contacto en particular se puede agregar al ID al final de la URL como en este ejemplo: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/-Ma6nC5l7n2nVal2zCyR.json**
 
-Componentes desarrollados
+Componentes desarrollados: 
 
-- [ContactTrigger.cls](./force-app/main/default/classes/ContactTrigger.cls)
-- [ContactService.cls](./force-app/main/default/classes/ContactService.cls)
+- [ContactTrigger.cls](./force-app/main/default/classes/ContactTrigger.trigger)
+- [ProcontactoService.cls](./force-app/main/default/classes/ProcontactoService.cls)
+- [ProcontactoQueueable.cls](./force-app/main/default/classes/ProcontactoQueueable.cls)
+
