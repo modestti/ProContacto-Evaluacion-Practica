@@ -18,4 +18,5 @@ En este ejercicio se realizó la preparación del entorno de trabajo necesario p
 ![IDE Visual Studio Code](Images/VSCode.png)
 
 - Git y Git Bash
+  
 ![Git Status](Images/Git.png)
