@@ -1,0 +1,3 @@
+public class ProcontactoExecutionContext {
+    public static Boolean isRunning = false;
+}
