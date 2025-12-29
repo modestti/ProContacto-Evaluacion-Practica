@@ -157,6 +157,8 @@ Para validar la resolución de los módulos, se comparte a continuación el enla
 
 ## Ejercicio 5 - Objetos estándar de Salesforce
 
+A continuación se describen conceptualmente los principales objetos estándar de Salesforce, los datos que almacenan y su relación con otros objetos del sistema.
+
 1. **Lead**: es un cliente potencial que demostró interés en un producto o servicio ofrecido por medio de la interacción con contenidos de marca. Almacena información básica de contacto y origen (nombre y apellido, empresa, email, teléfono, país, etc.).
 2. **Account**: es una organización, empresa o cliente con el que tu negocio tiene una relación. Es un registro clave que almacena información como el nombre de la empresa, dirección, industria, entre otros. 
 3. **Contact**: es una persona asociada a una cue ta o cliente. Los contactos almacenan información como nombre, correo electrónico, teléfono y otros detalles relevantes para gestionar la relación con esa persona.
