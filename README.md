@@ -113,3 +113,27 @@ En este ejercicio se realizó la preparación del entorno de trabajo necesario p
 - “application/json”
 - “application/xml”
 - “application/x-www-form-urlencoded”
+
+## Ejercicio 3 - Sintaxis JSON
+
+1. Realizar un request GET a la [URL](https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json)
+
+![Ejercicio 1](Images/ej3-punto1.png)
+
+2. Realizar un request POST a la URL anterior, y con body:
+```json
+{
+    "name":"Tu nombre", 
+    "email": tunombre.tuapellido@procontacto.com.mx 
+} 
+```
+![Ejercicio 2](Images/ej3-punto2.png)
+
+3. Realizar nuevamente un request GET a la [URL](https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json)
+
+![Ejercicio 3](Images/ej3-punto3.png)
+
+
+**¿Qué diferencias se observan entre las llamadas el punto 1 y 3?**
+
+La diferencia observada entre las llamadas GET del punto 1 y del punto 3 es que, en la segunda llamada (punto 3), aparece el contacto creado mediante el request POST realizado en el punto 2. Esto se debe a que el request POST agrega un nuevo registro en el servidor, el cual queda almacenado en la base de datos. Al volver a realizar el request GET, el servidor devuelve la información actualizada, incluyendo el nuevo contacto, mientras que en el punto 1 dicho registro aún no existía.
