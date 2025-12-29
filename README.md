@@ -1,4 +1,6 @@
-# ProContacto-Evaluacion-Practica
+# ProContacto - Evaluación Práctica
+
+Mi nombre es Tomás Agustín Modestti y presento a continuación la resolución de la evaluación práctica solicitada para el proceso de postulación laboral en ProContacto.
 
 ## Ejercicio 1 - Instalación del Ambiente de Desarrollo
 
