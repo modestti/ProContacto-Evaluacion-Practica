@@ -154,3 +154,20 @@ Se completaron los siguientes módulos utilizando el mismo **Playground**:
 ### Perfil público de Trailhead
 
 Para validar la resolución de los módulos, se comparte a continuación el enlace al perfil público de Trailhead: [Perfil de Trailhead – Tomás Agustín Modestti](https://www.salesforce.com/trailblazer/tmodestti)
+
+## Ejercicio 5 - Objetos estándar de Salesforce
+
+1. **Lead**: es un cliente potencial que demostró interés en un producto o servicio ofrecido por medio de la interacción con contenidos de marca. Almacena información básica de contacto y origen (nombre y apellido, empresa, email, teléfono, país, etc.).
+2. **Account**: es una organización, empresa o cliente con el que tu negocio tiene una relación. Es un registro clave que almacena información como el nombre de la empresa, dirección, industria, entre otros. 
+3. **Contact**: es una persona asociada a una cue ta o cliente. Los contactos almacenan información como nombre, correo electrónico, teléfono y otros detalles relevantes para gestionar la relación con esa persona.
+4. **Opportunity**: es una posible venta o negocio que estás trabajando con un cliente o prospecto. Es un registro clave para rastrear el progreso de las ventas, desde la identificación inicial hasta el cierre, y ayuda a gestionar el pipeline de ventas.
+5. **Product**: es un elemento o servicio que una empresa vende a los clientes. 
+6. **PriceBook**: es un objeto que define una lista de precios para los productos que una empresa ofrece. Permite gestionar diferentes precios para los mismos productos según el contexto. 
+7. **Quote**: es un documento que detalla los productos, servicios y precios ofrecidos a un cliente potencial.
+8. **Asset**: es un producto o servicio que un cliente ha comprado. Los activos permiten realizar un seguimiento de los productos adquiridos, su estado, historial de mantenimiento y más. 
+9. **Case**: es una solicitud de soporte o problema reportado por un cliente.
+10. **Article**: es un recurso de conocimiento que contiene información útil para clientes o empleados, como guías, preguntas frecuentes o soluciones a problemas comunes.
+
+### Diagrama UML - Relaciones entre estándares
+
+![Diagrama UML Salesforce](Images/UML.drawio.png)
