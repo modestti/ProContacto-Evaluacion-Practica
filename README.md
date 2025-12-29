@@ -308,7 +308,7 @@ Una API es un conjunto de reglas o protocolos que permite a las aplicaciones inf
 - Un Proceso Batch es un proceso automatizado que se ejecuta de forma periódica o programada, agrupando tareas similares y realizándolas automáticamente sin intervención humana directa.
 - Kanban es una metodología ágil que permite visualizar y gestionar el flujo de trabajo mediante tarjetas o columnas, mostrando el progreso de las tareas desde su inicio hasta su finalización.
 - Un ERP (Enterprise Resource Planning) es una herramienta que permite centralizar y gestionar los procesos empresariales, con el objetivo de optimizar la productividad y la toma de decisiones.
-- 
+
 **12. ¿Salesforce es un ERP?**
 
 No, Salesforce no es un ERP, sino una plataforma CRM enfocada en la gestión de relaciones con clientes.
