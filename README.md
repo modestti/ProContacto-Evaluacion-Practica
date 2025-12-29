@@ -137,3 +137,20 @@ En este ejercicio se realizó la preparación del entorno de trabajo necesario p
 **¿Qué diferencias se observan entre las llamadas el punto 1 y 3?**
 
 La diferencia observada entre las llamadas GET del punto 1 y del punto 3 es que, en la segunda llamada (punto 3), aparece el contacto creado mediante el request POST realizado en el punto 2. Esto se debe a que el request POST agrega un nuevo registro en el servidor, el cual queda almacenado en la base de datos. Al volver a realizar el request GET, el servidor devuelve la información actualizada, incluyendo el nuevo contacto, mientras que en el punto 1 dicho registro aún no existía.
+
+## Ejercicio 4 – Trailhead y Capacitación en Salesforce
+
+En este ejercicio se realizó la configuración del entorno de aprendizaje en **Trailhead**, cambiando el idioma de la plataforma a **inglés** para una mejor alineación con la documentación y contenidos técnicos oficiales de Salesforce.
+
+Se completaron los siguientes módulos utilizando el mismo **Playground**:
+
+- Fundamentos de la Plataforma Salesforce  
+- Fundamentos de Apex y .NET  
+- Modelado de Datos  
+- Fundamentos y Base de Datos de Apex  
+- Desencadenadores de Apex  
+- Apex Integration Services 
+
+### Perfil público de Trailhead
+
+Para validar la resolución de los módulos, se comparte a continuación el enlace al perfil público de Trailhead: [Perfil de Trailhead – Tomás Agustín Modestti](https://www.salesforce.com/trailblazer/tmodesttie)
