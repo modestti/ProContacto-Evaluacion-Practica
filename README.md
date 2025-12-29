@@ -34,7 +34,7 @@ En este ejercicio se realizó la preparación del entorno de trabajo necesario p
 
 **1. ¿Qué es un servidor HTTP?**
 
-   Un servidor HTTP es una pieza de software capaz de comprender URLs (direcciones web y HTTP (el protocolo que el navegador usa para obtener paginas web). Un servidor HTTP puede ser accedido a través de los nombres de dominio de los sitios web que aloja, y entrega el contenido de esos sitios alojados al dispositivo del usuario final.
+   Un servidor HTTP es una pieza de software capaz de comprender URLs (direcciones web) y HTTP (el protocolo que el navegador usa para obtener paginas web). Un servidor HTTP puede ser accedido a través de los nombres de dominio de los sitios web que aloja, y entrega el contenido de esos sitios alojados al dispositivo del usuario final.
 
 **2. ¿Qué son los verbos HTTP? Mencionar los más conocidos**
 
