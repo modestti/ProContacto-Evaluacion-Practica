@@ -344,7 +344,7 @@ El objetivo es consultar datos de contactos desde un servicio externo y sincroni
 
 Componentes desarrollados: 
 
-- [ContactTrigger.cls](./force-app/main/default/classes/ContactTrigger.trigger) : trigger que detecta cambios en el campo `idprocontacto`.
+- [ContactTrigger.cls](./force-app/main/default/triggers/ContactTrigger.trigger) : trigger que detecta cambios en el campo `idprocontacto`.
 - [ProcontactoService.cls](./force-app/main/default/classes/ProcontactoService.cls) : clase de servicio para consumir la API REST.
 - [ProcontactoQueueable.cls](./force-app/main/default/classes/ProcontactoQueueable.cls) : implementación de Queueable para procesamiento asíncrono.
 
