@@ -2,6 +2,15 @@
 
 Mi nombre es Tomás Agustín Modestti y presento a continuación la resolución de la evaluación práctica solicitada para el proceso de postulación laboral en ProContacto.
 
+## Indice
+1. [Ejercicio 1 - Instalación del Ambiente](#ejercicio-1)
+2. [Ejercicio 2 - Protocolo HTTP](#ejercicio-2)
+3. [Ejercicio 3 - Sintaxis JSON](#ejercicio-3)
+4. [Ejercicio 4 – Trailhead y Capacitación en Salesforce](#ejercicio-4)
+5. [Ejercicio 5 - Objetos estándar de Salesforce](#ejercicio-5)
+6. [Ejercicio 6 - Preguntas sobre Salesforce](#ejercicio-6)
+7. [Ejercicio 7 – Integración REST y Trigger en Salesforce](#ejercicio-7)
+
 ## Ejercicio 1 - Instalación del Ambiente de Desarrollo
 
 En este ejercicio se realizó la preparación del entorno de trabajo necesario para el desarrollo de la evaluación práctica, asegurando contar con las herramientas utilizadas habitualmente en proyectos dentro de ProContacto.
@@ -21,7 +30,7 @@ En este ejercicio se realizó la preparación del entorno de trabajo necesario p
   
 ![Git Status](Images/Git.png)
 
-## Ejercicio 2 – Comprensión del Protocolo HTTP
+## Ejercicio 2 – Protocolo HTTP
 
 **1. ¿Qué es un servidor HTTP?**
 
@@ -335,7 +344,11 @@ El objetivo es consultar datos de contactos desde un servicio externo y sincroni
 
 Componentes desarrollados: 
 
-- [ContactTrigger.cls](./force-app/main/default/classes/ContactTrigger.trigger)
-- [ProcontactoService.cls](./force-app/main/default/classes/ProcontactoService.cls)
-- [ProcontactoQueueable.cls](./force-app/main/default/classes/ProcontactoQueueable.cls)
+- [ContactTrigger.cls](./force-app/main/default/classes/ContactTrigger.trigger) : trigger que detecta cambios en el campo `idprocontacto`
+- [ProcontactoService.cls](./force-app/main/default/classes/ProcontactoService.cls) : clase de servicio para consumir la API REST
+- [ProcontactoQueueable.cls](./force-app/main/default/classes/ProcontactoQueueable.cls) : implementación de Queueable para procesamiento asíncrono
+
+
+**Agradezco la oportunidad de participar en este proceso.**  
+*Quedo a disposición para cualquier consulta o entrevista técnica adicional.*
 
