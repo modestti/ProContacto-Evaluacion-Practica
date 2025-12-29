@@ -2,11 +2,20 @@
 
 Mi nombre es Tomás Agustín Modestti y presento a continuación la resolución de la evaluación práctica solicitada para el proceso de postulación laboral en ProContacto.
 
+## 📑 Índice
+1. [Instalación del Ambiente](#ejercicio-1---instalación-del-ambiente-de-desarrollo)
+2. [Protocolo HTTP](#ejercicio-2--protocolo-http)
+3. [Sintaxis JSON](#ejercicio-3---sintaxis-json)
+4. [Trailhead y Capacitación en Salesforce](#ejercicio-4--trailhead-y-capacitación-en-salesforce)
+5. [Objetos Estándar de Salesforce](#ejercicio-5---objetos-estándar-de-salesforce)
+6. [Preguntas sobre Salesforce](#ejercicio-6---preguntas-sobre-salesforce)
+7. [Integración REST y Trigger en Salesforce](#ejercicio-7--integración-rest-y-trigger-en-salesforce)
+
 ## Ejercicio 1 - Instalación del Ambiente de Desarrollo
 
 En este ejercicio se realizó la preparación del entorno de trabajo necesario para el desarrollo de la evaluación práctica, asegurando contar con las herramientas utilizadas habitualmente en proyectos dentro de ProContacto.
  
- **Herramientas instaladas**
+ ### Herramientas instaladas
 
 - **Visual Studio Code** (VS Code): IDE utilizado para el desarrollo de aplicaciones web, móviles y Salesforce. Permite trabajar con múltiples lenguajes como Apex, JavaScript, HTML, CSS y frameworks modernos.
 
@@ -21,11 +30,11 @@ En este ejercicio se realizó la preparación del entorno de trabajo necesario p
   
 ![Git Status](Images/Git.png)
 
-## Ejercicio 2 – Comprensión del Protocolo HTTP
+## Ejercicio 2 – Protocolo HTTP
 
 **1. ¿Qué es un servidor HTTP?**
 
-   Un servidor HTTP es una pieza de software capaz de comprender URLs (direcciones web y HTTP (el protocolo que el navegador usa para obtener paginas web). Un servidor HTTP puede ser accedido a través de los nombres de dominio de los sitios web que aloja, y entrega el contenido de esos sitios alojados al dispositivo del usuario final.
+   Un servidor HTTP es una pieza de software capaz de comprender URLs (direcciones web) y HTTP (el protocolo que el navegador usa para obtener páginas web). Un servidor HTTP puede ser accedido a través de los nombres de dominio de los sitios web que aloja, y entrega el contenido de esos sitios alojados al dispositivo del usuario final.
 
 **2. ¿Qué son los verbos HTTP? Mencionar los más conocidos**
 
@@ -74,11 +83,11 @@ En este ejercicio se realizó la preparación del entorno de trabajo necesario p
 	[
 		{
 			"nombre": "React Js",
-			"institución: “Talento Tech"
+			"institución": "Talento Tech"
 		},
 		{
 			"nombre”: “Front End",
-			"institución: “Talento Tech"
+			"institución": "Talento Tech"
 		}
 	]
 }
@@ -161,7 +170,7 @@ A continuación se describen conceptualmente los principales objetos estándar d
 
 1. **Lead**: es un cliente potencial que demostró interés en un producto o servicio ofrecido por medio de la interacción con contenidos de marca. Almacena información básica de contacto y origen (nombre y apellido, empresa, email, teléfono, país, etc.).
 2. **Account**: es una organización, empresa o cliente con el que tu negocio tiene una relación. Es un registro clave que almacena información como el nombre de la empresa, dirección, industria, entre otros. 
-3. **Contact**: es una persona asociada a una cue ta o cliente. Los contactos almacenan información como nombre, correo electrónico, teléfono y otros detalles relevantes para gestionar la relación con esa persona.
+3. **Contact**: es una persona asociada a una cuenta o cliente. Los contactos almacenan información como nombre, correo electrónico, teléfono y otros detalles relevantes para gestionar la relación con esa persona.
 4. **Opportunity**: es una posible venta o negocio que estás trabajando con un cliente o prospecto. Es un registro clave para rastrear el progreso de las ventas, desde la identificación inicial hasta el cierre, y ayuda a gestionar el pipeline de ventas.
 5. **Product**: es un elemento o servicio que una empresa vende a los clientes. 
 6. **PriceBook**: es un objeto que define una lista de precios para los productos que una empresa ofrece. Permite gestionar diferentes precios para los mismos productos según el contexto. 
@@ -267,7 +276,7 @@ El Software como Servicio (SaaS) es un modelo de entrega de software basado en l
 
 **2.	¿Salesforce es Saas?**
 
-Si, Salesforce es una solución SaaS, líder especializada en la gestión de relaciones con los clientes (CRM), que se accede mediante Internet sin necesidad de instalación local.
+Sí, Salesforce es una solución SaaS, líder especializada en la gestión de relaciones con los clientes (CRM), que se accede mediante Internet sin necesidad de instalación local.
 
 **3.	¿Qué significa que una solución sea Cloud?**
 
@@ -329,11 +338,17 @@ El objetivo es consultar datos de contactos desde un servicio externo y sincroni
 ![Demostración de la creación del campo idprocontacto](Images/campo-idprocontacto.png)
 
 **3. Desarrollar un desencadenador para que, al modificar o crear un contacto en Salesforce completando el campo generado en el punto B, se invoque el servicio web del punto A. Con el campo idprocontacto de la respuesta, se deberán obtener los datos de correo electrónico y actualizar el campo de correo electrónico del contacto. Utilizar Playground.**
-- Recuerda que puedes usar tu ID obtenido en el punto A para probar la funcionalidad.**
+- Recuerda que puedes usar tu ID obtenido en el punto A para probar la funcionalidad.
 - Recuerda el módulo realizado sobre callouts de tipo REST.
-- Para consultar un contacto en particular se puede agregar al ID al final de la URL como en este ejemplo: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/-Ma6nC5l7n2nVal2zCyR.json**
+- Para consultar un contacto en particular se puede agregar al ID al final de la URL como en este ejemplo: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/-Ma6nC5l7n2nVal2zCyR.json
 
-Componentes desarrollados
+Componentes desarrollados: 
 
-- [ContactTrigger.cls](./force-app/main/default/classes/ContactTrigger.cls)
-- [ContactService.cls](./force-app/main/default/classes/ContactService.cls)
+- [ContactTrigger.cls](./force-app/main/default/classes/ContactTrigger.trigger) : trigger que detecta cambios en el campo `idprocontacto`.
+- [ProcontactoService.cls](./force-app/main/default/classes/ProcontactoService.cls) : clase de servicio para consumir la API REST.
+- [ProcontactoQueueable.cls](./force-app/main/default/classes/ProcontactoQueueable.cls) : implementación de Queueable para procesamiento asíncrono.
+
+---
+**Agradezco la oportunidad de participar en este proceso.**  
+*Quedo a disposición para cualquier consulta o entrevista técnica adicional.*
+
