@@ -153,4 +153,4 @@ Se completaron los siguientes módulos utilizando el mismo **Playground**:
 
 ### Perfil público de Trailhead
 
-Para validar la resolución de los módulos, se comparte a continuación el enlace al perfil público de Trailhead: [Perfil de Trailhead – Tomás Agustín Modestti](https://www.salesforce.com/trailblazer/tmodesttie)
+Para validar la resolución de los módulos, se comparte a continuación el enlace al perfil público de Trailhead: [Perfil de Trailhead – Tomás Agustín Modestti](https://www.salesforce.com/trailblazer/tmodestti)
