@@ -329,9 +329,9 @@ El objetivo es consultar datos de contactos desde un servicio externo y sincroni
 ![Demostración de la creación del campo idprocontacto](Images/campo-idprocontacto.png)
 
 **3. Desarrollar un desencadenador para que, al modificar o crear un contacto en Salesforce completando el campo generado en el punto B, se invoque el servicio web del punto A. Con el campo idprocontacto de la respuesta, se deberán obtener los datos de correo electrónico y actualizar el campo de correo electrónico del contacto. Utilizar Playground.**
-- Recuerda que puedes usar tu ID obtenido en el punto A para probar la funcionalidad.**
+- Recuerda que puedes usar tu ID obtenido en el punto A para probar la funcionalidad.
 - Recuerda el módulo realizado sobre callouts de tipo REST.
-- Para consultar un contacto en particular se puede agregar al ID al final de la URL como en este ejemplo: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/-Ma6nC5l7n2nVal2zCyR.json**
+- Para consultar un contacto en particular se puede agregar al ID al final de la URL como en este ejemplo: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/-Ma6nC5l7n2nVal2zCyR.json
 
 Componentes desarrollados: 
 
